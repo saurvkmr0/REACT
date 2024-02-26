@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: poppins;
+}
+
+body{
+    /* background-color: grey; */
+}
+
+
+/* navbar */
+
+.navwrap{
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    margin:0 79px 0 79px;
+    align-items: center;
+}
+
+.navmenu ul{
+    display: flex;
+    list-style: none;
+    gap:24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2E2E2E;
+}
+
+.loginbtn{
+    background-color: #D01C28;
+    color: white;
+    border: none;
+    width: 75px;
+    height: 31px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* frame  */
+
+.frame{
+    width: 1125px;
+    height: 613px;
+    margin:8px auto;
+}
+
+.frame1{
+    width:50%;
+}
+
+.frame1 h1{
+    font-size: 100px;
+    line-height: 102px;
+    padding-bottom:36px;
+}
+.frame1 p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #5A5959;
+    padding-bottom:36px;
+}
+
+.buttonarea{
+    padding-bottom:36px;
+    display: flex;
+    gap:50px;
+}
+
+.shopbtn{
+    background-color: #D01C28;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 41px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.categorybtn{
+    background-color: white;
+    color: #5A5959;
+    border: 2px solid #5A5959;
+    width: 150px;
+    height: 41px;
+    font-size: 24px;
+    font-weight: 600;
+}
