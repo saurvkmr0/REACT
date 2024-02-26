@@ -1,4 +1,6 @@
 import React from "react";
+import heroShoe from '../components/assets/shoe_image.png'
+import BuyLink from "./BuyLink";
 
 function Frame()
 {
@@ -17,9 +19,10 @@ function Frame()
                     <button className="shopbtn">Shop Now</button>
                     <button className="categorybtn">Category</button>
                 </div>
+                <BuyLink />
             </div>
             <div className="frame2">
-                
+                <img src={heroShoe} alt="hero shoe image" />
             </div>
         </div>
     );
