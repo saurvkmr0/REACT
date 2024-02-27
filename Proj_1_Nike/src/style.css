@@ -64,6 +64,10 @@ body{
     padding-bottom:36px;
 }
 
+.frame2{
+    padding-top: 75px;
+}
+
 .buttonarea{
     padding-bottom:36px;
     display: flex;
