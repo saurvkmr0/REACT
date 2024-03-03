@@ -1,6 +1,8 @@
 import React from 'react'
 import wallpaper from '../assets/purple_leaf2.png';
 import Input from './Input';
+import CheckBox from './CheckBox';
+import Button from './Button';
 
 const Frame = () => {
   return (
@@ -18,7 +20,14 @@ const Frame = () => {
           <Input label="PHONE"/>
           <Input label="EMAIL" type="email"/>
           <Input label="PASSWORD" type="password"/>
-          <Input label="CONFIRM PASSWORD" type="password"/>      
+          <Input label="CONFIRM PASSWORD" type="password"/>  
+
+          <CheckBox label="I accept terms and conditions" type="checkbox"/>
+          <CheckBox label="I want to receive news" type="checkbox"/>   
+
+          <Button buttonText="Reset" color="#272155" />
+          <Button buttonText="Submit" color="#5f317d"/>
+
           </form>
         </div>
 
