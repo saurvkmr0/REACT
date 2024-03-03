@@ -1,5 +1,14 @@
-@tailwind base;
+@tailwind base; 
 @tailwind components;
 @tailwind utilities;
+
+input{
+    border:solid black 2px;
+}
+
+img{
+    height:600px;
+    aspect-ratio: inherit;
+}
 
 
