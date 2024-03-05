@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Button(props) {
+function Button({...rest}) {
   return (
-    <div btn>
-        <button className='font-normal' style={{backgroundColor:props.color, padding:"5px 0px", width:"80px", color:"white", borderRadius:"5px"}}>{props.buttonText}</button>
+    <div>
+        <button {...rest} className='font-normal' type={rest.type} style={{backgroundColor:rest.color, padding:"5px 0px", width:"80px", color:"white", borderRadius:"5px"}} >{rest.buttonText}</button>
     </div>
   )
 }

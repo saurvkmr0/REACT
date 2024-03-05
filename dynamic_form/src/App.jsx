@@ -5,7 +5,7 @@ import Frame from './components/Frame';
 const App = () => {
   return (
     <div className='container flex justify-center max-w-full items-center h-screen'>
-        <Frame />
+        <Frame className="z-10"/>
     </div>
   )
 }
