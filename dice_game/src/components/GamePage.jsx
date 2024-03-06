@@ -1,10 +1,12 @@
 import React from 'react'
 import ScoreBoard from './ScoreBoard';
+import Content from './Content';
 
 const GamePage = () => {
   return (
-    <div className='mx-20 my-16'>
-      <ScoreBoard score="5" />
+    <div className='mx-20 my-12'>
+      <ScoreBoard score="12" />
+      <Content />
     </div>
   )
 }
