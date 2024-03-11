@@ -11,6 +11,10 @@ const GamePage = () => {
   {
     diceValue=data;
     calcScore();
+    if(data==="reset")
+    {
+      setNewScore(0);
+    }
   }
 
   function handleKeyPadData(data)

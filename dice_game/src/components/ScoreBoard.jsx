@@ -7,7 +7,7 @@ const ScoreBoard = ({ onDataReceived, score }) => {
   function handelClick(value)
   {
     setKeyPadValue(value);
-    console.log("keypad: ",value);
+    // console.log("keypad: ",value);
     onDataReceived(value);
   }
 
