@@ -4,16 +4,36 @@ import Content from './Content';
 
 const GamePage = () => {
 
+  var diceValue;
+  var keyPadValue=0;
   const [newScore, setNewScore] = useState("0");
-  function handelScoreData(data)
+  function handleDiceData(data)
   {
-    setNewScore(data);
+    diceValue=data;
+    calcScore();
+  }
+
+  function handleKeyPadData(data)
+  {
+    keyPadValue=data; 
+  }
+
+  function calcScore()
+  {
+    if(diceValue==keyPadValue)
+    {
+      setNewScore(newScore+diceValue);
+    }
+    else
+    {
+      setNewScore(newScore-2);
+    }
   }
   
   return (
     <div className='mx-20 my-12'>
-      <ScoreBoard score={newScore}/>
-      <Content onDataReceived={handelScoreData}/>
+      <ScoreBoard score={newScore} onDataReceived={handleKeyPadData} />
+      <Content onDataReceived={handleDiceData}/>
     </div>
   )
 }

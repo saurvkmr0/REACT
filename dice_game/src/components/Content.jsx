@@ -22,18 +22,11 @@ const Content = ({ onDataReceived }) => {
         onDataReceived(n);
     }
 
-    function resetScore()
-    {
-      console.log("reset");
-      onDataReceived(n+10);
-    }
-
-    
   return (
     <div className='flex items-center flex-col pt-12 gap-6'>
         <img className='dice' src={diceArray[n]} onClick={changeDice} />
         <p className='font-semibold text-2xl pb-5 '>Click on Dice to roll</p>
-        <Button buttonText="Reset Score" onClick={resetScore}/>
+        <Button buttonText="Reset Score"/>
         <Button buttonText="Show Rules" />
         <Rules />
     </div>
