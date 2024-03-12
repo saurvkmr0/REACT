@@ -15,22 +15,24 @@ const GamePage = () => {
     {
       setNewScore(0);
     }
+    console.log("from dice ",diceValue);
   }
 
   function handleKeyPadData(data)
   {
     keyPadValue=data; 
+    console.log("from key ",keyPadValue);
   }
 
   function calcScore()
   {
-    if(diceValue==keyPadValue)
+    if(diceValue===keyPadValue)
     {
-      setNewScore(newScore+diceValue);
+      setNewScore(Number(newScore+diceValue));
     }
     else
     {
-      setNewScore(newScore-2);
+      setNewScore(Number(newScore-2));
     }
   }
   

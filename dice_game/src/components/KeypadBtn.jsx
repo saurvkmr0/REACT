@@ -1,9 +1,10 @@
 import React from 'react'
 
-const KeypadBtn = ({btnNum,onClick}) => {
+const KeypadBtn = ({btnNum,onClick,isSelect}) => {
+  // console.log("passed: ",isSelect);
   return (
     <div>
-      <button className='text-2xl font-bold w-16 h-16 border border-black' onClick={onClick}>{btnNum}</button>
+      <button className={isSelect?'keypad_btn_selected':'keypad_btn_unselect'} onClick={onClick}>{btnNum}</button>
     </div>
   )
 }
