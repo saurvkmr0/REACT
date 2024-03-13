@@ -14,6 +14,14 @@ var n=0;
 
 const Content = ({ onDataReceived }) => {
     const[diceNum, setDice] = useState(n);
+    const[ruleState,setRuleState] = useState(false);
+    function handleRuleState()
+    {
+      if(ruleState===false)
+      {setRuleState(true);}
+      else
+      {setRuleState(false);}
+    }
     function changeDice()
     {
         n=Math.floor(Math.random()*6)+1;
@@ -33,8 +41,8 @@ const Content = ({ onDataReceived }) => {
         <img className='dice' src={diceArray[n]} onClick={changeDice} />
         <p className='font-semibold text-2xl pb-5 '>Click on Dice to roll</p>
         <Button buttonText="Reset Score" onClick={handelReset}/>
-        <Button buttonText="Show Rules" />
-        <Rules />
+        <Button buttonText="Show Rules" onClick={handleRuleState}/>
+        {ruleState && <Rules />}
     </div>
   )
 }
