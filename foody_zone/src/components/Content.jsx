@@ -1,12 +1,12 @@
 import React from 'react'
 import Card from './Card'
 
-const Content = () => {
+const Content = ({searchData}) => {
   return (
     <div className='content'>
-      <Card />
+      <Card searchData={searchData}/>
     </div>
   );
 }
 
-export default Content
+export default Content;

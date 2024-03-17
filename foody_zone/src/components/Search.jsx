@@ -1,10 +1,13 @@
 import React from 'react'
 
-const Search = () => {
+const Search = ({onDataReceived}) => {
+  const handleChange = (event) => {
+    onDataReceived(event.target.value);
+  }
   return (
     <div>
         <form>
-            <input type="search" placeholder='Search Food...'></input>
+            <input type="search" placeholder='Search Food...' onChange={handleChange}></input>
           </form>
     </div>
   )

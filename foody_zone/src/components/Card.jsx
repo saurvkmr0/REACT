@@ -4,9 +4,16 @@ import Button from './Button'
 
 const BASE_URL = "http://localhost:9000";
 
-const Card = () => {
+const Card = ({searchData}) => {
 
   const [foodData, setFoodData] = useState(null);
+
+
+  function logData()
+  {
+    console.log(searchData);
+  }
+  logData();
 
   useEffect(() => {
     const fetchFoodData = async () => {
@@ -30,7 +37,7 @@ const Card = () => {
           <div>
             <h1>{item.name}</h1>
             <p>{item.text}</p>
-            <Button btnName={item.price} />
+            <Button btnName={item.price.toFixed(2)} />
           </div>
         </div>
       )

@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./style.css";
 import Navbar from "../src/components/Navbar";
 import Content from './components/Content';
 
 const App = () => {
 
+  const [searchData, setSearchData] = useState("");
+
+  function handleSearchDataFromNav(searchData)
+  {
+    setSearchData(searchData);
+  }
+
   return (
     <div className='container max-w-full h-screen flex flex-col'>
-        <Navbar />
-        <Content />
+        <Navbar onDataReceived={handleSearchDataFromNav}/>
+        <Content searchData={searchData}/>
     </div>
   )
 }
