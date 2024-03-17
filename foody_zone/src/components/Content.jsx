@@ -1,10 +1,10 @@
 import React from 'react'
 import Card from './Card'
 
-const Content = ({searchData}) => {
+const Content = ({searchData, btnValue}) => {
   return (
     <div className='content'>
-      <Card searchData={searchData}/>
+      <Card searchData={searchData} btnValue={btnValue}/>
     </div>
   );
 }

@@ -6,6 +6,12 @@ import Content from './components/Content';
 const App = () => {
 
   const [searchData, setSearchData] = useState("");
+  const [btnValue, setBtnValue] = useState("all");
+
+  function handleBtnChange(btnValue)
+  {
+    setBtnValue(btnValue);
+  }
 
   function handleSearchDataFromNav(searchData)
   {
@@ -14,8 +20,8 @@ const App = () => {
 
   return (
     <div className='container max-w-full h-screen flex flex-col'>
-        <Navbar onDataReceived={handleSearchDataFromNav}/>
-        <Content searchData={searchData}/>
+        <Navbar onDataReceived={handleSearchDataFromNav} onBtnChange={handleBtnChange}/>
+        <Content searchData={searchData} btnValue={btnValue}/>
     </div>
   )
 }
