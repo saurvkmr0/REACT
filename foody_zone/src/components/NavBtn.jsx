@@ -9,7 +9,7 @@ const NavBtn = ({onBtnChange}) => {
   }
 
   return (
-    <div className='flex gap-20 justify-center'>
+    <div className='flex gap-5 justify-center'>
             <Button btnName="All" onClick={handleClick} value="all" />
             <Button btnName="Breakfast" onClick={handleClick} value="breakfast"/>
             <Button btnName="Lunch" onClick={handleClick} value="lunch"/>

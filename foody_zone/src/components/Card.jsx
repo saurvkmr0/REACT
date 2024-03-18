@@ -26,12 +26,16 @@ const Card = ({ searchData, btnValue }) => {
     return(
     <>
         {foodData && foodData.filter(item => item.type.toLowerCase().includes(btnValue.toLowerCase()) && item.name.toLowerCase().includes(searchData.toLowerCase())).map(item => (
-          <div key={item.name}>
-            <div><img src={BASE_URL + item.image} /></div>
+          <div className='glass-bg flex text-white border-solid border-white border-2 rounded-3xl' key={item.name}>
+            <div><img className='food-img m-4' src={BASE_URL + item.image} /></div>
+            <div className='w-44 py-4 flex flex-col justify-between'>
             <div>
-              <h1>{item.name}</h1>
-              <p>{item.text}</p>
+              <h1 className='font-semibold text-base pb-2 bt-4'>{item.name}</h1>
+              <p className='text-xs'>{item.text}</p>
+              </div>
+              <div className='flex justify-end mr-4'>
               <Button btnName={item.price.toFixed(2)} />
+              </div>
             </div>
           </div>
         ))}
@@ -44,12 +48,16 @@ const Card = ({ searchData, btnValue }) => {
     return (
       <>
         {foodData && foodData.filter(item => item.name.toLowerCase().includes(searchData.toLowerCase())).map(item => (
-          <div key={item.name}>
-            <div><img src={BASE_URL + item.image} /></div>
-            <div>
-              <h1>{item.name}</h1>
-              <p>{item.text}</p>
+          <div className='glass-bg flex text-white border-solid border-white border-2 rounded-3xl' key={item.name}>
+            <div><img className='food-img m-4' src={BASE_URL + item.image} /></div>
+            <div className='w-44 py-4 flex flex-col justify-between'>
+              <div>
+              <h1 className='font-semibold text-base pb-2 bt-4'>{item.name}</h1>
+              <p className='text-xs'>{item.text}</p>
+              </div>
+              <div className='flex justify-end mr-4'>
               <Button btnName={item.price.toFixed(2)} />
+              </div>
             </div>
           </div>
         ))}

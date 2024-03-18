@@ -7,7 +7,7 @@ const Search = ({onDataReceived}) => {
   return (
     <div>
         <form>
-            <input type="search" placeholder='Search Food...' onChange={handleChange}></input>
+            <input className="search" type="search" placeholder='Search Food' onChange={handleChange}></input>
           </form>
     </div>
   )
