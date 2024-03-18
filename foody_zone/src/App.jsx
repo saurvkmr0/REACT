@@ -19,7 +19,7 @@ const App = () => {
   }
 
   return (
-    <div className='container max-w-full h-screen flex flex-col'>
+    <div className='container max-w-full flex flex-col'>
         <Navbar onDataReceived={handleSearchDataFromNav} onBtnChange={handleBtnChange}/>
         <Content searchData={searchData} btnValue={btnValue}/>
     </div>
