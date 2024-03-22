@@ -1,10 +1,10 @@
 import React from 'react'
-import NoContactScreen from '../screens/NoContactScreen'
+import Screen from '../screens/Screen';
 
 const Container = () => {
   return (
     <div className="flex justify-center items-center h-screen">
-        <NoContactScreen />
+        <Screen />
     </div>
     )
 }

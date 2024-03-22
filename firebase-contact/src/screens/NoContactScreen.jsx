@@ -1,12 +1,11 @@
 import React from 'react'
-import TitleBar from '../components/TitleBar'
-import SearchBar from '../components/SearchBar'
+import Header from '../components/Header';
+import NoContent from '../components/NoContent';
 
 const NoContactScreen = () => {
   return (
-    <div className="noContactScreen w-[393px] h-[652px] bg-gray flex flex-col items-center pt-2 ">
-      <TitleBar />
-      <SearchBar />
+    <div className='noContactScreen my-auto flex justify-center items-center'>
+        <NoContent />
     </div>
   )
 }
