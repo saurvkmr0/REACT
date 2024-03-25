@@ -5,9 +5,6 @@ import ProfileImg from '../assets/profile.png'
 
 const NameCard = ({contactName, ContactMail}) => {
 
-    // const contactName = 'Dummy Name';
-    // const ContactMail = 'dummyKumar@dibba.com'
-
   return (
     <div className="w-[360px] h-16 bg-cream mb-[11px] rounded-[10px] flex items-center justify-between py-2 px-1">
         <div className='flex'>

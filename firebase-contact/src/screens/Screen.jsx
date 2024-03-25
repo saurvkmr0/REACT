@@ -11,8 +11,6 @@ const Screen = () => {
     <div className='w-[393px] h-[652px] bg-gray flex flex-col items-center pt-2'>
         <Header />
         {isContactAvailable?<ContactScreen />:<NoContactScreen />}
-        {/* <NoContactScreen /> */}
-        {/* <ContactScreen /> */}
     </div>
   )
 }

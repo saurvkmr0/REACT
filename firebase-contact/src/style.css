@@ -12,6 +12,6 @@ body{
 
 .search::placeholder{
     color:white;
-    padding: 44px;
+    /* padding: 44px; */
     font-size: 16px;
 }
