@@ -30,7 +30,7 @@ const Card = ({ searchData, btnValue }) => {
             <div><img className='food-img m-4' src={BASE_URL + item.image} /></div>
             <div className='w-44 py-4 flex flex-col justify-between'>
             <div>
-              <h1 className='font-semibold text-base pb-2 bt-4'>{item.name}</h1>
+              <h1 className='font-semibold text-base pb-2 bt-4 text-red-600'>{item.name}</h1>
               <p className='text-xs'>{item.text}</p>
               </div>
               <div className='flex justify-end mr-4'>
@@ -52,7 +52,7 @@ const Card = ({ searchData, btnValue }) => {
             <div><img className='food-img m-4' src={BASE_URL + item.image} /></div>
             <div className='w-44 py-4 flex flex-col justify-between'>
               <div>
-              <h1 className='font-semibold text-base pb-2 bt-4'>{item.name}</h1>
+              <h1 className='font-semibold text-base pb-2 bt-4 text-red-600'>{item.name}</h1>
               <p className='text-xs'>{item.text}</p>
               </div>
               <div className='flex justify-end mr-4'>
