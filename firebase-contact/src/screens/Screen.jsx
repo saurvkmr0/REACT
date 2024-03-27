@@ -18,7 +18,7 @@ const Screen = () => {
     <div className='w-[393px] h-[652px] bg-gray flex flex-col items-center pt-2 relative'>
         <Header dataReceived={handleAddNewContactStatus}/>
         {isContactAvailable?<ContactScreen />:<NoContactScreen />}
-        { isAddContactButtonClicked && <AddNewContact />}
+        { isAddContactButtonClicked && <AddNewContact/>}
     </div>
   )
 }
