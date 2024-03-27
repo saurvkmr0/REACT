@@ -2,11 +2,13 @@ import React from 'react'
 import TitleBar from './TitleBar'
 import SearchBar from './SearchBar'
 
-const NoContactScreen = () => {
+const NoContactScreen = ({dataReceived}) => {
+
+
   return (
     <div className=" ">
       <TitleBar />
-      <SearchBar />
+      <SearchBar dataReceived={dataReceived}/>
     </div>
   )
 }
