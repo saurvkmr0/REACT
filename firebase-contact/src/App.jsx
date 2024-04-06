@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.css';
 import Container from './components/Container';
 import { useEffect } from 'react'
@@ -9,14 +9,24 @@ import {db} from './config/firebase';
 
 const App = () => {
 
+  const [contacts, setContacts] = useState("");
+
+
   useEffect(()=>
   {
     const getContacts = async () =>
     {
       const contactsRef = collection(db,"contacts");
       const contactsSnapshot = await getDocs(contactsRef);
-      console.log(contactsSnapshot);
-
+      const contacts = contactsSnapshot.docs.map((doc)=>
+        {
+          return{
+            id : doc.id,
+            ...doc.data(),
+          }
+        }
+      );
+      setContacts(contacts); // This is the contact fetched form the firestore as a array of objects.
     }
     getContacts();
   }
@@ -25,7 +35,7 @@ const App = () => {
 
   return (
     <div className="container max-w-full">
-        <Container />
+        <Container contacts={contacts}/>
     </div>
   )
 }
