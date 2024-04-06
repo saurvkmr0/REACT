@@ -13,8 +13,17 @@ const SearchBar = ({dataReceived}) => {
     },[addNewContact, dataReceived]);
 
     function addContactClick()
-    {   
-        setAddNewContact(true);
+    {
+        if(addNewContact==false)
+        {
+            setAddNewContact(true);
+            document.getElementById('addAndClose').classList.toggle('open-add-contact');
+        }
+        if(addNewContact==true)
+        {
+            setAddNewContact(false);
+            document.getElementById('addAndClose').classList.toggle('close-add-contact');
+        }
     }
     
   return (
@@ -23,7 +32,7 @@ const SearchBar = ({dataReceived}) => {
             <IoSearch className='absolute top-[8px] left-[10px] size-6 text-white'/>
             <input className='search bg-gray rounded-[10px] border border-white w-full h-10 text-white pl-[44px]' placeholder='Search Contact'></input>
         </div>
-        <IoIosAddCircle className='w-[72px] h-[72px] text-white' onClick={addContactClick}/>
+        <IoIosAddCircle className='w-[72px] h-[72px] text-white' id='addAndClose' onClick={addContactClick}/>
     </div>
     )
 }

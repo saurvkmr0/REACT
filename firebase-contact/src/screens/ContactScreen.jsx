@@ -6,9 +6,9 @@ const ContactScreen = ({contacts}) => {
     <div className="">
 
     {contacts.map((item) => (
-      <NameCard id="" contactName={item.name} ContactMail={item.email}/>)
+      <NameCard key={item.id} contactName={item.name} ContactMail={item.email}/>)
     )}
-
+ 
     </div>
   )
 }
