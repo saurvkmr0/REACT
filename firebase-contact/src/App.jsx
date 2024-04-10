@@ -26,11 +26,11 @@ const App = () => {
           }
         }
       );
-      setContacts(contacts); // This is the contact fetched form the firestore as a array of objects.
+      setContacts(contacts); // This is the contact fetched form the firestore as a array of objects.P 
     }
     getContacts();
   }
-,[]);
+,[contacts]);
 
 
   return (
