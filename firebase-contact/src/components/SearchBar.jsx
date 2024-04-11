@@ -17,12 +17,18 @@ const SearchBar = ({dataReceived}) => {
         if(addNewContact==false)
         {
             setAddNewContact(true);
-            document.getElementById('addAndClose').classList.toggle('open-add-contact');
+            document.getElementById('addAndClose').classList.add('open-add-contact');
+            document.getElementById('addAndClose').classList.remove('close-add-contact');
+            document.getElementById('contact-screen').classList.add('add-blur');
+            
         }
         if(addNewContact==true)
         {
             setAddNewContact(false);
-            document.getElementById('addAndClose').classList.toggle('close-add-contact');
+            document.getElementById('addAndClose').classList.add('close-add-contact');
+            document.getElementById('addAndClose').classList.remove('open-add-contact');
+            document.getElementById('contact-screen').classList.remove('add-blur');
+            
         }
     }
     
