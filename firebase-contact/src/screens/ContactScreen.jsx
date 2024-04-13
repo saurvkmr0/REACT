@@ -5,7 +5,7 @@ const ContactScreen = ({contacts}) => {
   return (
     <div className="" id='contact-screen'>
     {contacts.map((item) => (
-      <NameCard key={item.id} contactName={item.name} ContactMail={item.email}/>)
+      <NameCard id={item.id} contactName={item.name} ContactMail={item.email}/>)
     )}
  
     </div>
