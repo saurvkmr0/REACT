@@ -2,7 +2,7 @@ import React from 'react'
 
 const Container = () => {
   return (
-    <div>Container</div>
+    <div className='bg-red-400 h-11'>Container</div>
   )
 }
 
