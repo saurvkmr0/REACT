@@ -6,7 +6,7 @@ const Container = () => {
   return (
     <div className='flex'>
       <div><SideNav/></div>
-      <div>
+      <div className='grow'>
         <Navbar/>
       </div>
     </div>
