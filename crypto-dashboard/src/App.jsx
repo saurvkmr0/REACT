@@ -4,7 +4,9 @@ import './style.css'
 
 const App = () => {
   return (
-    <Container/>
+    <>
+      <Container/>
+    </>
   )
 }
 
