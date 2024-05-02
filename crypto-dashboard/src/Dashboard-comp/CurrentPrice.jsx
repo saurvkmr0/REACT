@@ -29,7 +29,7 @@ const CurrentPrice = () => {
         </div>
 
         <div className='flex justify-end gap-1 text-gray-500 text-xs mt-4 mb-[50px]'>
-            {dateStamp.map((item)=>(<p>{item}</p>))}
+            {dateStamp.map((item)=>(<p key={item}>{item}</p>))}
         </div>
 
         <div>
@@ -37,7 +37,7 @@ const CurrentPrice = () => {
         </div>
 
         <div className="flex justify-between text-gray-500 text-xs mt-4">
-            {timeStamp.map((item)=>(<p>{item}</p>))}
+            {timeStamp.map((item)=>(<p key={item}>{item}</p>))}
         </div>
 
 
