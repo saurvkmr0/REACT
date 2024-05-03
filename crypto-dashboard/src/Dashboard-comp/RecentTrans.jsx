@@ -27,19 +27,24 @@ const RecentTrans = () => {
             timestamp:"2022-06-09 7:06 PM",
             amount1:"+ ₹81,123.10",
             amount2:null,
-        },
+        }
     ]
 
   return (
-    <div className="">
+    
+        <div className="h-[345px] max-w-[468px]">
         <div className="'text-gray-500 font-semibold mb-6">
             Recent Transactions
         </div>
-        {transactions.map((item)=>
-            <Recent icon={item.icon} title={item.title} timestamp={item.timestamp} amount1={item.amount1} amount2={item.amount2}/>
-        )}
+        <div className=''>
+            {transactions.map((item)=>
+                <Recent icon={item.icon} title={item.title} timestamp={item.timestamp} amount1={item.amount1} amount2={item.amount2}/>
+            )}
+        </div>
         <div className="text-base font-bold text-center">View All</div>
-    </div>
+        </div>
+    
+    
   )
 }
 

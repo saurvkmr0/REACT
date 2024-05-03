@@ -11,7 +11,7 @@ const CurrentPrice = () => {
     const timeStamp=["7:15 PM","12:35 AM", "6:35 AM", "12:15 PM", "5:55 PM"];
 
   return (
-    <div className='max-w-[468px] p-6'>
+    <div className='max-w-[468px] max-h-[345px] p-6'>
 
         <div className="flex justify-between">
             <div>
