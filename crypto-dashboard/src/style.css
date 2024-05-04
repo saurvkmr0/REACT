@@ -7,3 +7,8 @@
     padding:0;
 }
 
+.contactBg{
+    background-image: url('../src/Assets/Visual.png');
+    background-size: cover;
+    background-position: center;
+}

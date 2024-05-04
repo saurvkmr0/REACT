@@ -3,6 +3,7 @@ import Balance from './Balance'
 import CurrentPrice from './CurrentPrice'
 import RecentTrans from './RecentTrans'
 import Loans from './Loans'
+import Contact from './Contact'
 
 const Dashboard = () => {
   return (
@@ -14,6 +15,7 @@ const Dashboard = () => {
       </div>
       <div className="flex justify-between">
         <Loans />
+        <Contact />
       </div>
     </div>
   )
