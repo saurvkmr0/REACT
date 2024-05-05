@@ -3,7 +3,7 @@ import SideNav from './SideNav';
 import Navbar from './Navbar';
 import Dashboard from '../Dashboard-comp/Dashboard';
 import { ToggleNavContext } from '../App';
-import Transaction from '../Transc-comp/Transaction';
+import Transaction from '../Trans-comp/Transaction';
 import Support from '../Support-comp/Support';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdArrowRoundBack } from "react-icons/io";
