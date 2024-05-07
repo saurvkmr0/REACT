@@ -1,9 +1,12 @@
-import React from 'react'
+import React,{useContext} from 'react'
+import { ToggleTransFilters } from './Transaction';
 import ButtonPill from '../Component/ButtonPill'
 import TableData from './TableData';
 
 const TransTable = () => {
 
+    const [activeFilter,setActiveFilter] = useContext(ToggleTransFilters);
+    console.log(activeFilter);
   return (
     <div>
         <table className='[width:100%]'>
@@ -16,7 +19,7 @@ const TransTable = () => {
             </tr>
 
             {TableData.map(
-                (item)=>(
+                (item)=>( (activeFilter === "all" || activeFilter === item.category) &&
                     <tr className='font-medium' key={item.id}>
                         <td>{item.id}</td>
                         <td>
