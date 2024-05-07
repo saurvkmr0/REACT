@@ -2,6 +2,7 @@ import React,{createContext,useState} from 'react'
 import ButtonSquare from '../Component/ButtonSquare';
 import { LuDownload } from "react-icons/lu";
 import Heading from './Heading';
+import TransTable from './TransTable';
 export const ToggleTransFilters = createContext();
 
 
@@ -15,6 +16,7 @@ const Transaction = () => {
         </div>
           <ToggleTransFilters.Provider value={[activeFilter,setActiveFilter]}>
             <Heading />
+            <TransTable />
           </ToggleTransFilters.Provider>
     </div>
   )

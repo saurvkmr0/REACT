@@ -12,3 +12,7 @@
     background-size: cover;
     background-position: center;
 }
+
+th, td{
+    padding-bottom: 16px;
+}

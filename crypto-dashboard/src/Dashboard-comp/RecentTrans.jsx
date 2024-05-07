@@ -8,6 +8,7 @@ import Recent from '../Component/Recent';
 const RecentTrans = () => {
     const transactions=[
         {
+            id:"1",
             icon:<AiFillDollarCircle />,
             title:"INR Deposit",
             timestamp:"2022-06-09 7:06 PM",
@@ -15,6 +16,7 @@ const RecentTrans = () => {
             amount2:null,
         },
         {
+            id:"2",
             icon:<SiBitcoinsv />,
             title:"BTC Sell",
             timestamp:"2022-05-27 12:32 PM",
@@ -22,6 +24,7 @@ const RecentTrans = () => {
             amount2:"+ $81,123.10",
         },
         {
+            id:"3",
             icon:<AiFillDollarCircle />,
             title:"INR Deposit",
             timestamp:"2022-06-09 7:06 PM",
@@ -38,7 +41,7 @@ const RecentTrans = () => {
         </div>
         <div className=''>
             {transactions.map((item)=>
-                <Recent icon={item.icon} title={item.title} timestamp={item.timestamp} amount1={item.amount1} amount2={item.amount2}/>
+                <Recent key={item.id} icon={item.icon} title={item.title} timestamp={item.timestamp} amount1={item.amount1} amount2={item.amount2}/>
             )}
         </div>
         <div className="text-base font-bold text-center">View All</div>

@@ -10,20 +10,20 @@ const Heading = () => {
   return (
     <div>
         <div className="flex justify-between mt-3 py-4">
-            <div className="flex list-none text-base font-medium">
-                <li className={`flex gap-3 ${activeFilter=='all' && "border-b-2 border-purple-900"} px-6 pb-4 ${activeFilter=='all'?"text-black":"text-gray-600"}`} onClick={()=>setActiveFilter("all")}>
+            <div className="flex list-none text-base font-medium cursor-pointer">
+                <li className={`flex gap-3 ${activeFilter==='all' && "border-b-2 border-purple-900"} px-6 pb-4 ${activeFilter==='all'?"text-black":"text-gray-600"}`} onClick={()=>setActiveFilter("all")}>
                     <p>All</p>
                     <p>349</p>
                 </li>
-                <li className={`flex gap-3 ${activeFilter=='deposit' && "border-b-2 border-purple-900"} px-6 pb-4 ${activeFilter=='deposit'?"text-black":"text-gray-600"}`} onClick={()=>setActiveFilter("deposit")}>
+                <li className={`flex gap-3 ${activeFilter==='deposit' && "border-b-2 border-purple-900"} px-6 pb-4 ${activeFilter==='deposit'?"text-black":"text-gray-600"}`} onClick={()=>setActiveFilter("deposit")}>
                     <p>Deposit</p>
                     <p>114</p>
                 </li>
-                <li className={`flex gap-3 ${activeFilter=='withdraw' && "border-b-2 border-purple-900"} px-6 pb-4 ${activeFilter=='withdraw'?"text-black":"text-gray-600"}`} onClick={()=>setActiveFilter("withdraw")}>
+                <li className={`flex gap-3 ${activeFilter==='withdraw' && "border-b-2 border-purple-900"} px-6 pb-4 ${activeFilter==='withdraw'?"text-black":"text-gray-600"}`} onClick={()=>setActiveFilter("withdraw")}>
                     <p>Withdraw</p>
                     <p>213</p>
                 </li>
-                <li className={`flex gap-3 ${activeFilter=='trade' && "border-b-2 border-purple-900"} px-6 pb-4 ${activeFilter=='trade'?"text-black":"text-gray-600"}`} onClick={()=>setActiveFilter("trade")}>
+                <li className={`flex gap-3 ${activeFilter==='trade' && "border-b-2 border-purple-900"} px-6 pb-4 ${activeFilter==='trade'?"text-black":"text-gray-600"}`} onClick={()=>setActiveFilter("trade")}>
                     <p>Trade</p>
                     <p>22</p>
                 </li>
