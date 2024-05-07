@@ -31,8 +31,7 @@ const TransTable = () => {
                             <p>{item.amount}</p>
                             <p className='text-gray-600 text-sm'>{item.sumAmount}</p>
                         </td>
-                        <td className='text-white'><ButtonPill name={item.status.charAt(0).toUpperCase()+item.status.slice(1)} bgColor={item.status=="pending"?"bg-gray-600":"bg-red-600"}/></td>
-                        {/* bgColor={"bg-gray-600"} */}
+                        <td className='text-white'><ButtonPill name={item.status.charAt(0).toUpperCase()+item.status.slice(1)} bgColor={item.status=="pending"?"bg-gray-600":(item.status=="processing"?"bg-yellow-500":(item.status=="cancelled"?"bg-red-600":"bg-green-600"))}/></td>
                     </tr>
                 )
             )}

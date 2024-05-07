@@ -8,8 +8,41 @@ const TableData=[
         amount:"+ ₹81,123.10",
         sumAmount:"",
         status:"pending",
-        category:"deposite",
-    }
+        category:"deposit",
+    },
+    {
+        id:"PD32NA2H",
+        data:"2022-06-09",
+        time:"07:06 PM",
+        transactionType:"INR Deposit",
+        transferType:"E-Transfer",
+        amount:"+ ₹81,123.10",
+        sumAmount:"",
+        status:"cancelled",
+        category:"deposit",
+    },
+    {
+        id:"ACV32A13",
+        data:"2022-06-09",
+        time:"07:06 PM",
+        transactionType:"INR Deposit",
+        transferType:"E-Transfer",
+        amount:"+ ₹81,123.10",
+        sumAmount:"",
+        status:"processing",
+        category:"deposit",
+    },
+    {
+        id:"POH789RT",
+        data:"2022-06-09",
+        time:"07:06 PM",
+        transactionType:"INR Deposit",
+        transferType:"E-Transfer",
+        amount:"+ ₹81,123.10",
+        sumAmount:"",
+        status:"completed",
+        category:"deposit",
+    },
 ];
 
 export default TableData;
