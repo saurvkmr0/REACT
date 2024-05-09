@@ -1,11 +1,17 @@
 import React,{useContext} from 'react';
 import { ToggleTransFilters } from './Transaction';
+import { SearchFilters } from './Transaction';
 import { IoSearch } from "react-icons/io5";
 
 
 const Heading = () => {
  
     const [activeFilter,setActiveFilter] = useContext(ToggleTransFilters);
+    const [searchValue, setSearchValue] = useContext(SearchFilters);
+
+    const handleChange= (e) =>{
+        setSearchValue(e.target.value);
+    }
 
   return (
     <div>
@@ -30,7 +36,7 @@ const Heading = () => {
             </div>
             <div className='flex gap-2 items-start text-base text-gray-600 font-medium'>
                 <IoSearch className='text-2xl'/>
-                <input placeholder='Search by ID or destination'/>
+                <input placeholder='Search by ID or destination' onChange={handleChange} className='pl-2'/>
             </div>
         </div>
     </div>

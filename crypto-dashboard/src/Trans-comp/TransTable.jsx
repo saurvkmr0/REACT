@@ -1,13 +1,14 @@
 import React,{useContext} from 'react'
 import { ToggleTransFilters } from './Transaction';
+import { SearchFilters } from './Transaction';
 import ButtonPill from '../Component/ButtonPill'
 import TableData from './TableData';
 
 const TransTable = () => {
 
     const [activeFilter,setActiveFilter] = useContext(ToggleTransFilters);
-    console.log(activeFilter);
-  return (
+    const [searchValue, setSearchValue] = useContext(SearchFilters);
+    return (
     <div>
         <table className='[width:100%]'>
             <tr className='text-gray-600 font-medium text-left'>
@@ -18,7 +19,7 @@ const TransTable = () => {
                 <th>Status</th>
             </tr>
 
-            {TableData.map(
+            {TableData.filter(item => item.id.toLowerCase().includes(searchValue.toLowerCase())).map(
                 (item)=>( (activeFilter === "all" || activeFilter === item.category) &&
                     <tr className='font-medium' key={item.id}>
                         <td>{item.id}</td>
