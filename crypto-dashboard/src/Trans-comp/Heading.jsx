@@ -36,7 +36,7 @@ const Heading = () => {
             </div>
             <div className='flex gap-2 items-start text-base text-gray-600 font-medium'>
                 <IoSearch className='text-2xl'/>
-                <input placeholder='Search by ID or destination' onChange={handleChange} className='pl-2'/>
+                <input placeholder='Search by ID or destination' onChange={handleChange} className='px-2'/>
             </div>
         </div>
     </div>
