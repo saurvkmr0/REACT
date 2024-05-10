@@ -25,10 +25,14 @@ const Form = () => {
 
             <div className='flex flex-col w-full font-medium text-base'>
                 <label>Message</label>
-                <input className="p-[10px] h-[92px]" placeholder='Your Message'  type='text'/>
+                <textarea className="p-[10px] h-[92px]" placeholder='Your Message'  type='text'/>
             </div>
 
-            <p className="font-medium text-sm">I agree with <a className='text-purple-900'>Terms & Conditions.</a></p>
+            <div className="flex gap-4">
+              <input className='[color:purple]' type='checkbox' />
+              <p className="font-medium text-sm">I agree with <a className='text-purple-900'>Terms & Conditions.</a></p>
+            </div>
+            
             <button className='h-[38px] bg-gray-300 rounded text-gray-600 font-medium text-base hover:bg-purple-900 hover:text-white'>Send a Message</button>
             <button className='h-[38px] font-medium text-base hover:bg-purple-900 hover:text-white'>Book a Meeting</button>
           </div>
