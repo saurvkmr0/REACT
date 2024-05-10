@@ -6,12 +6,12 @@ import ChatBot from './ChatBot'
 
 const Support = () => {
   return (
-    <div className=''>
-      <div className="flex">
+    <div className='flex flex-col max-w-5xl mx-auto'>
+      <div className="flex justify-between gap-6">
         <ContactUs />
         <Form />
       </div>
-      <div className="flex">
+      <div className="flex justify-between gap-6">
         <LiveChat />
         <ChatBot />
       </div>
